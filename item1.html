@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRISM FLUX - Neural Network Deep Dive</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="item1.css"> 
+    <link rel="stylesheet" href="css/chatbot.css">
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+</head>
+<body class="detail-page-body">
+    
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html#home" class="logo">
+                <div class="logo-icon">
+                    <div class="logo-prism">
+                        <div class="prism-shape"></div>
+                    </div>
+                </div>
+                <span class="logo-text">
+                    <span class="prism">Education</span>
+                    <span class="flux">crasher</span>
+                </span>
+            </a>
+            
+            <div class="back-link-container">
+                <a href="index.html" class="nav-link submit-btn detailed-page-back-btn">
+                    ← Back to Home
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="deep-dive-section" id="neural-network-details">
+        <div class="section-container">
+            
+            <div class="section-header text-center">
+                <h2 class="section-title">The Neural Network Architecture</h2>
+                <p class="section-subtitle">A deep dive into learning, processing, and prediction systems.</p>
+            </div>
+            
+            <div class="content-block intro-grid">
+                
+                <div class="intro-text-wrapper">
+                    <p class="intro-text">
+                        Neural Networks are the engine behind modern artificial intelligence, modeled loosely after the human brain. They process complex data through layers of interconnected nodes, learning patterns that enable advanced classification and prediction. 
+                    </p>
+                    <p class="intro-text mt-3">
+                        At PRISM FLUX, we optimize **Feed-Forward Networks** for swift data prediction and utilize **Recurrent Networks** for time-series forecasting, ensuring high performance across all our digital solutions.
+                    </p>
+                </div>
+                
+                <div class="intro-visual">
+                    <h4 class="visual-label">ANN Architecture Overview</h4>
+                    <img src="https://imgs.search.brave.com/VGoJ6yIAOXy573pnngz1mc1QyfcX0x9Z7T7DSeyEMyY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTE4/Njc3NjE4Ni9waG90/by9hcnRpZmljaWFs/LWludGVsbGlnZW5j/ZS1jb25jZXB0Lmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1I/UUpvd01zbXAwSTRu/bHZseUpzOGZJWWV4/UnlOX1lyNG9YRWFQ/cFZUTFZJPQ" alt="Neural Network Diagram" class="diag-img">
+                </div>
+            </div>
+
+            <div class="content-block">
+                <h3 class="block-title">Core Components and Data Flow</h3>
+                <div class="philosophy-pillars">
+                    
+                    <div class="pillar">
+                        <div class="pillar-icon">➡️</div>
+                        <h4 class="pillar-title">Input Layer</h4>
+                        <p class="pillar-description">Receives raw data, normalizing features for the network. The entry point of all data streams.</p>
+                    </div>
+                    
+                    <div class="pillar">
+                        <div class="pillar-icon">⛭</div>
+                        <h4 class="pillar-title">Hidden Layers</h4>
+                        <p class="pillar-description">The computational engine. It extracts complex patterns and applies non-linear activation functions.</p>
+                    </div>
+                    
+                    <div class="pillar">
+                        <div class="pillar-icon">✅</div>
+                        <h4 class="pillar-title">Output Layer</h4>
+                        <p class="pillar-description">Produces the final result—a classification probability, a predicted value, or a decision.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-block code-highlight">
+                <h3 class="block-title">Backpropagation: The Learning Algorithm</h3>
+                <p class="block-description">
+                    The network learns by comparing its output error to the true value, then calculating and adjusting the weights backwards—a process called **Backpropagation**.
+                </p>
+                <div class="code-box">
+                    <pre><code class="language-python">
+# Simplified Weight Update Rule
+# New_Weight = Old_Weight - (Learning_Rate * Gradient_of_Error)
+
+def update_weights(error, learning_rate):
+    # Pseudocode for gradient descent
+    weights -= learning_rate * calculate_gradient(error)
+    return weights
+                    </code></pre>
+                </div>
+            </div>
+<div class="content-block impact-metrics-block">
+    <h3 class="block-title">Key Performance Metrics & Operational Impact</h3>
+    
+    <div class="metrics-container">
+        
+        <div class="metric-card">
+            <div class="metric-icon">⏱️</div>
+            <h4 class="metric-value">45 ms</h4>
+            <p class="metric-label">Average Prediction Latency</p>
+            <p class="metric-detail">Ensures real-time decision-making without perceived user delay.</p>
+        </div>
+        
+        <div class="metric-card">
+            <div class="metric-icon">📈</div>
+            <h4 class="metric-value">98.2%</h4>
+            <p class="metric-label">Model Accuracy Rating</p>
+            <p class="metric-detail">Maintained precision across diverse, noisy data streams post-deployment.</p>
+        </div>
+        
+        <div class="metric-card">
+            <div class="metric-icon">⚡</div>
+            <h4 class="metric-value">75%</h4>
+            <p class="metric-label">Automated QA Efficiency</p>
+            <p class="metric-detail">Reduction in human intervention for visual defect detection in manufacturing.</p>
+        </div>
+        
+        <div class="metric-card">
+            <div class="metric-icon">🔒</div>
+            <h4 class="metric-value">Zero-Trust</h4>
+            <p class="metric-label">Data Privacy Compliance</p>
+            <p class="metric-detail">All models run on secured, encrypted infrastructure using federated learning principles.</p>
+        </div>
+    </div>
+    <div class="content-block external-resources-block">
+    <h3 class="block-title">Further Resources: Deep Dive into AI</h3>
+    <p class="resource-intro">
+        Explore the primary academic and industrial resources that govern the architecture and training methodologies discussed here.
+    </p>
+
+    <div class="resources-grid">
+        
+        <a href="https://deeplearning.ai/" target="_blank" class="resource-link">
+            <span class="link-icon">📚</span>
+            <div class="link-text-content">
+                <h4>DeepLearning.AI: Courses & Theory</h4>
+                <p>Leading academic resource for foundational neural network theory, backpropagation, and CNNs.</p>
+            </div>
+            <span class="external-indicator">↗</span>
+        </a>
+
+        <a href="https://pytorch.org/" target="_blank" class="resource-link">
+            <span class="link-icon">⚙️</span>
+            <div class="link-text-content">
+                <h4>PyTorch Documentation</h4>
+                <p>The core framework used for dynamic graph creation and high-performance tensor computation.</p>
+            </div>
+            <span class="external-indicator">↗</span>
+        </a>
+        
+        <a href="https://arxiv.org/list/cs.LG/recent" target="_blank" class="resource-link">
+            <span class="link-icon">🔬</span>
+            <div class="link-text-content">
+                <h4>arXiv - Machine Learning Feed</h4>
+                <p>Access the latest peer-reviewed research papers and model breakthroughs in real-time.</p>
+            </div>
+            <span class="external-indicator">↗</span>
+        </a>
+
+    </div>
+</div>
+    
+    <div class="impact-summary">
+    
+    </div>
+</div>
+        </div>
+        <div class="content-block about-nn-block">
+    <h3 class="block-title">About Neural Networks: A Foundational Primer</h3>
+    
+    <div class="about-grid">
+        <div class="about-history">
+            <h4>Historical Context & Evolution</h4>
+            <p>
+                The concept of the Artificial Neural Network (ANN) dates back to the **1940s**, modeled on the biological neurons of the human brain. Early computational models like the Perceptron (1950s) laid the groundwork, but the field saw its first major revolution in the **1980s** with the widespread adoption of the **Backpropagation Algorithm**, enabling the training of deep, multi-layered networks.
+            </p>
+            <p class="mt-3">
+                Modern deep learning, utilizing sophisticated architectures (CNNs, RNNs, Transformers), leverages massive datasets and specialized hardware (GPUs/TPUs) to achieve near-human performance across multiple cognitive tasks.
+            </p>
+        </div>
+        
+        <div class="about-visual">
+            <h4>The Biological Analogy</h4>
+            <p>
+                A core principle is the imitation of neuronal activity. The network learns by receiving input signals, processing them through connections (synapses/weights), and firing an output if a threshold is met.
+            </p>
+            
+            <p class="visual-caption">ANNs replicate the fundamental Input-Process-Output flow of biological neurons, using weights and activation functions.</p>
+        </div>
+    </div>
+</div>
+
+<div class="content-block intro-text-only-block">
+    <p class="intro-text">
+        Neural Networks are the engine behind modern artificial intelligence. They process complex data through layers of interconnected nodes, learning patterns that enable advanced classification and prediction. At PRISM FLUX, we optimize **Feed-Forward Networks** for swift data prediction and utilize **Recurrent Networks** for time-series forecasting, ensuring high performance across all our digital solutions.
+    </p>
+</div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content"></div>
+        <div class="footer-bottom"></div>
+    </footer>
+    
+<button id="chatbot-btn" onclick="toggleChat()">💬</button>
+
+<div id="chatbot-box" style="display: none; z-index: 9999;">
+    <div id="chatbot-header">
+        <span>PRISM_FLUX_AI</span>
+        <button onclick="toggleChat()">×</button>
+    </div>
+    <div id="chatbot-messages"></div>
+    <div id="chatbot-input-area">
+        <input type="text" id="chat-input" placeholder="Ask about Neural Networks...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+<script src="js/chatbot.js"></script>
+
+    
+    <script src="item1.js"></script>
+    
+    </body>
+</html>
